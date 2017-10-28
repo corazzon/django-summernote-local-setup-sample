@@ -47,7 +47,7 @@ $ pip install django
 # django_summernote_samples 장고프로젝트를 생성합니다.
 $ django-admin startproject django_summernote_samples .
 
-# 기본으로 생성 되는 DB를 생성합니다.
+# 기본으로 내장되어 있는 DB를 생성합니다.
 $ python manage.py migrate
 
 # 서버를 생성해 봅니다.
@@ -79,7 +79,7 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')  
 ```  
 
-`urls.py` 에는 다음과 같이 django-summernote의 url과 첨부파일을 저장할 MEDIA_URL과 MEDIA_ROOT를 지정해 준다.
+`urls.py` 에는 다음과 같이 django-summernote의 url과 첨부파일을 저장할 MEDIA_URL과 MEDIA_ROOT를 지정해 줍니다.
 
 
 ```python
@@ -116,7 +116,7 @@ $ python manage.py migrate django_summernote
 
 ```
 
-`blog/admin.py`에 다음과 같이 django-summernote 를 설정해 준다.
+`blog/admin.py`에 다음과 같이 django-summernote 를 설정해 줍니다.
 
 ```python
 # -*- coding: utf-8 -*-
@@ -134,7 +134,7 @@ admin.site.register(Post, PostAdmin)
 ```
 
 
-django-admin 로그인을 위해 createsuperuser 로 관리자 계정을 생성해 준다.
+django-admin 로그인을 위해 createsuperuser 로 관리자 계정을 생성해 줍니다.
 
 ```
 $ python manage.py createsuperuser
@@ -142,12 +142,12 @@ $ python manage.py createsuperuser
 
 `http://127.0.0.1:8000/admin/` 로 관리자 페이지에 접속해서 로그인 한다.
 
-django-summernote 가 적용 된 Post 작성 화면을 볼 수 있다.
+django-summernote 가 적용 된 Post 작성 화면을 볼 수 있습니다.
 
 ![장고어드민](http://i.imgur.com/UpUnBXK.png)
 
 
-위와 같이 작성 된 샘플 프로젝트를 git으로 관리하고자 한다면 `.gitignore`에 다음의 항목을 추가한다.
+위와 같이 작성 된 샘플 프로젝트를 git으로 관리하고자 한다면 `.gitignore`에 다음의 항목을 추가합니다.
 
 `.gitignore`
 
